@@ -1,0 +1,90 @@
+html,
+
+body {
+    background-color: rgb(118, 174, 181);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-image: url("https://images.unsplash.com/photo-1675679620439-bacfc67a669a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-size: cover;
+}
+h1 {
+    font-size: 48px;
+    border: 2px;
+    color: rgb(235, 216, 11)
+}
+.greet {
+    font-size: 32px;
+    color:rgb(208, 225, 255);
+}
+h3 { 
+    font-size: 18px;
+    color: bisque;
+}
+#display h2 {
+    color:rgb(150, 207, 253);
+    font-size: 18px;
+    text-align: center;
+}
+.calendar {
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.calendar div {
+    margin: 5px;
+}
+.calendar span {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(196, 221, 245);
+    opacity: 55%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px rgb(16, 26, 138);
+}
+.calendar .text {
+    height: 18px;
+    font-size: 14px;
+    background-color: rgb(116, 116, 181);
+}
+.boxed {
+    border: 5px rgb(251, 219, 238) solid;
+    width: auto;
+    height: 250px;
+    margin: 40px;
+    padding-top: 50px;
+    border-radius: 10px;
+}
+.greetings {
+    color:rgb(123, 231, 148);
+    font-size: 35px;
+    font-weight:700px;
+}
+.quote {
+    color: seashell;
+    font-size: 28px;
+    font-weight:700px;
+    margin-top: 50px;
+}
+#Qbtn {
+    margin-top: 24px;
+    padding: 20px;
+    background-color: blueviolet;    
+    border-radius: 8px;
+    color: seashell;
+    font-size: 18px;
+}
+footer {
+    background-color: rgb(248, 250, 161);
+    font-size: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 10px;
+    text-align: right;
+    height: 28px;
+    width: 100%;
+}
