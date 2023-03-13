@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+    min-height: 60vh;
+}
+/*main page background*/ 
+.bg-img {
+    width: 100%;
+    height: 68vh;
+    background: url(https://images.unsplash.com/photo-1678034845441-2c1d777a14f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80);
+    background-size: cover;
+    background-attachment: fixed;    
+}
+
+/*index page*/
+.container {
+    padding: 30px;
+}
+/*h1 referring to Welcome to my portfolio*/
+h1 {
+    font-size: 48px;
+    margin-bottom: 5px;
+    font-family: "lobster";
+}
+@media only screen and (max-width: 639px){
+    .container {
+        padding: 10px;
+    } 
+}
+.navigation {
+    float: right;
+    margin-right: 50px;
+    padding-bottom: 2px; 
+}
+.navigation ul {
+    display: flex;
+    flex: 1;
+}
+.navigation li {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: right;
+    font-size: 24px;
+    color: black;
+}
+a:link {
+    text-decoration: none;
+    color: black;   
+}
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+a:active {
+    text-decoration: none;
+    color: black;
+}
+/*index page about me*/
+.about {
+    padding-top: 60px;
+}
+.about h2 {
+    color:darkred;
+}
+.about p {
+    font-size: 20px;
+}
+
+/*portfolio page*/
+#myProjects {
+    margin-left: 40px;
+    margin-bottom: 0;
+}
+.project-container {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin-left: 2.2em;
+    margin-right: 2.2em;
+    margin-top: 2.2em;
+    margin-bottom: 3.3em;
+    column-gap: 1.85em;
+}
+.project {
+    background-color: #0e1538;
+    border-radius: 0.62em;
+    padding: 1.25em 1.25em;
+    box-shadow: 0 8px 5px grey;
+    width: 100%;
+    margin-top: auto;
+}
+.image-container {
+    display: flex;
+    flex-direction: column;
+}
+.proj-img {
+    width: 100%;
+    object-fit: contain;
+}
+.card-heading {
+    margin: 10px 0 15px;
+    text-align: center;
+    color: bisque;
+}
+.card-descript {
+    margin-top: auto;
+    color: bisque;
+}
+.btn {
+    color: rgb(161, 244, 161);
+    border: initial;
+    background: initial;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+@media only screen and (max-width: 639px){
+    .project-container {
+        flex-direction: column;
+        row-gap: 2.5em;
+        } 
+}
+
+/*contact page*/
+.greet {
+    height: 40vh;
+    padding: 20px 20px;
+    font-size: 28px;
+    color: darkred;
+    text-align: center;
+}
+#typewriter {
+    color: darkred;
+    font-weight: 700px;
+}
+#cursor {
+    color: darkred;
+    animation: blink 1s linear infinite;
+}
+@keyframes blink {
+    0% {opacity: 100%
+    }
+    50% {opacity: 0%
+    }
+}
+.greet h2 {
+    font-size: 28px;
+}
+.buttonarea {
+    background: #0e1538;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.invite {
+    background: #0e1538;
+    width: 100%;
+    height: 25px;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 18px;
+    color: gold;
+}
+.dark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dark a {
+    position: relative;
+    width: 160px;
+    height: 60px;
+    color: black;
+    display: inline-block;
+    background-color: gold;
+    margin: 40px;
+}
+.dark a:before, 
+.dark a:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    transition: 0.5s;
+    background-color: gold;
+}
+.dark a:hover:before {
+    inset: -3px;
+}
+.dark a:hover:after {
+    inset: -3px;
+    filter: blur(10px);
+}
+.dark a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: #0e1538;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 3px;
+    color: gold;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/*footer*/
+#footer {
+    width: 100%;
+    height: auto;
+    background-color: rgb(233, 111, 24);
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+}
